@@ -244,7 +244,6 @@ body {
     display: flex;
     border-radius: 30px;
     box-shadow: 5px 10px 5px black;
-    animation: fadeInRight 1s ease-in-out;
 }
 
 .centerText{
@@ -257,8 +256,8 @@ body {
 
 
 .welcomeSection {
-    padding-top: 20vh;
-    padding-bottom: 25vh;
+    padding-top: 46vh;
+    padding-bottom: 46vh;
     border-color: black;
     border-bottom-style: solid;
     border-top-style: solid;
@@ -268,6 +267,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    height: 100vh;
 }
 
 .carousel-caption {
@@ -382,13 +382,10 @@ body {
     color: #555;
 }
 
-:root {
-    --scroll: 0;
-}
+
 
 .header {
     background-color: #9b1f17;
-    
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -404,24 +401,34 @@ body {
     display: 5;
     text-align:center;
 }
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(300px);
-    }
 
-    to {
-        opacity: 1;
-    }
-}
-#carouselBorder{
+
+#carouselBorder {
     border-style: solid;
     border-width: thick;
-    height: 550px;
-    width: 800px;
+    max-width: 100%;
+    min-height: auto;
+    min-width: auto\9;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 #youtubeBorder {
     border-style: solid;
     border-width: thick;
 }
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-20%);
+}
+
+.game:nth-child(2){
+    transition-delay: 200ms;
+}
+.games{
+    display: flex;
+}
+
+
 

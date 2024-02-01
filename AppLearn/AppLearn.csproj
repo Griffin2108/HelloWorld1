@@ -7,21 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\JS files\**" />
     <Compile Remove="wwwroot\imgs\**" />
+    <Content Remove="Views\JS files\**" />
     <Content Remove="wwwroot\imgs\**" />
+    <EmbeddedResource Remove="Views\JS files\**" />
     <EmbeddedResource Remove="wwwroot\imgs\**" />
+    <None Remove="Views\JS files\**" />
     <None Remove="wwwroot\imgs\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Views\JS files\Scroll.js" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Views\JS files\Scroll.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
   </ItemGroup>
 
   <ItemGroup>
